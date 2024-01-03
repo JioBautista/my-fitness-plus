@@ -1,8 +1,11 @@
 import React from 'react'
+import LogInForm from './loginForm/LogInForm'
 
 function App() {
   return (
-    <div>Hello World</div>
+    <>
+    <LogInForm />
+    </>
   )
 }
 

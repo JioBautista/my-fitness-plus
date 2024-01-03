@@ -16,8 +16,10 @@
   4. Improve text rendering
 */
 body {
-  line-height: 1.5;
+  line-height: 1.0;
   -webkit-font-smoothing: antialiased;
+  background-color: #E5E4E2;
+  font-family: 'Roboto', sans-serif;
 }
 /*
   5. Improve media defaults
