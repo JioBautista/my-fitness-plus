@@ -1,16 +1,49 @@
 import React from "react";
 import styles from "../styles/loginform.module.scss";
+import { useForm } from "react-hook-form";
 
 function LogInForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
+
   return (
     <div className={styles.wrapper}>
       <h1>MyFitnessPlus+</h1>
       <h2>Welcome Back</h2>
-      <input
-        placeholder="Username"
-      />
-      <input type="password" placeholder="Password" />
-      <button>LOG IN</button>
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input
+          placeholder="Username"
+          name="username"
+          {...register("username", { required: true })}
+        />
+        {errors.username && errors.username.type === "required" && (
+          <p style={{ color: "red", alignSelf: "start", marginLeft: "5rem" }}>
+            Cannot be empty
+          </p>
+        )}
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          {...register("password", { required: true })}
+        />
+        {errors.password && errors.password.type === "required" && (
+          <p style={{ color: "red", alignSelf: "start", marginLeft: "5rem" }}>
+            Cannot be empty
+          </p>
+        )}
+        <button>LOG IN</button>
+      </form>
       <p className={styles.forgot}>
         Forgot your Password or need help loggin in? <a>Click Here</a>
       </p>
