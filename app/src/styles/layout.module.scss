@@ -4,4 +4,8 @@
     max-width: 1300px;
     margin-inline: auto;
     position: relative;
+
+    @media(min-width:768px) {
+        display: flex;
+    }
 }

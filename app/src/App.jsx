@@ -1,14 +1,20 @@
-import React from 'react'
-import LogInForm from './loginForm/LogInForm'
-import Dashboard from './dashboard/Dashboard'
+import React from "react";
+import Layout from "./layout/Layout";
+import BMICalculator from "./pages/BMICalculator";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-    {/* <LogInForm /> */}
-    <Dashboard />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <>
+          <Route path="/" element={<Layout />}>
+            <Route path="calculator" element={<BMICalculator />} />
+          </Route>
+        </>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

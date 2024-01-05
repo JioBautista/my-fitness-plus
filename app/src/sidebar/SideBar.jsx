@@ -1,27 +1,36 @@
 import React from "react";
 import styles from "../styles/sidebar.module.scss";
+import { Link } from "react-router-dom";
 import "animate.css";
 
 function SideBar() {
   const [toggle, setToggle] = React.useState(false);
   return (
     <div className={styles.wrapper}>
-      <h1>MyFitnessPlus+</h1>
+      <Link to="/">
+        <h1>MyFitnessPlus+</h1>
+      </Link>
 
-      <button className={styles.link}>
-        <img src="images/icons8-workout-50.png" />
-        WORKOUTS
-      </button>
+      <Link to="workouts" className={styles.link}>
+        <button>
+          <img src="images/icons8-workout-50.png" />
+          WORKOUTS
+        </button>
+      </Link>
 
-      <button className={styles.link}>
-        <img src="images/icons8-nutrition-32.png" />
-        NUTRITION
-      </button>
+      <Link to="nutrition" className={styles.link}>
+        <button>
+          <img src="images/icons8-nutrition-32.png" />
+          NUTRITION
+        </button>
+      </Link>
 
-      <button className={styles.link}>
-        <img src="images/icons8-calculator-64.png" />
-        BMI CALCULATOR
-      </button>
+      <Link to="calculator" className={styles.link}>
+        <button>
+          <img src="images/icons8-calculator-64.png" />
+          BMI CALCULATOR
+        </button>
+      </Link>
 
       <hr className={styles.link}></hr>
 
@@ -30,10 +39,12 @@ function SideBar() {
         Jbautista
       </button>
 
-      <button className={styles.link}>
-        <img src="images/icons8-settings-50.png" />
-        Settings
-      </button>
+      <Link to="settings" className={styles.link}>
+        <button>
+          <img src="images/icons8-settings-50.png" />
+          Settings
+        </button>
+      </Link>
 
       <img
         src="public/images/icons8-menu-50.png"
@@ -50,7 +61,7 @@ function SideBar() {
           ></div>
           {/* MOBILE SIDEBAR */}
           <div
-            className={`animate__animated  animate__slideInLeft ${styles.collapsed}`}
+            className={`animate__animated  animate__slideInLeft animate__faster ${styles.collapsed}`}
           >
             <button>
               <img src="images/icons8-workout-50.png" />
