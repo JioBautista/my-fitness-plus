@@ -6,7 +6,7 @@ function Home() {
     <div className={styles.container}>
       <h1>Welcome back JBautista!</h1>
       <h2>OVERVIEW</h2>
-
+      
     </div>
   );
 }
