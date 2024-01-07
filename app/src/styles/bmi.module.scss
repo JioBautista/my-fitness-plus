@@ -1,10 +1,28 @@
-.wrapper {
+.container {
     width: 100%;
+    text-align: center;
+    padding: 1rem;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        max-width: 70ch;
+        margin-inline: auto;
+    }
+    @media(min-width:1024px) {
+        padding: 2rem 3rem;
+    }
+}
+
+.wrapper {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 
 
     .radio {
@@ -17,13 +35,31 @@
             height: 1.5rem;
         }
     }
+
     .inputs {
         width: 100%;
         text-align: start;
 
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        ::-webkit-input-placeholder {
+            text-align: right;
+            color: #D27D2D;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
         p {
             margin-bottom: 1rem;
         }
+
         input {
             margin-bottom: 0.5rem;
             width: 100%;
@@ -31,22 +67,58 @@
             border-radius: 0.50rem;
             border: none;
         }
+
+        div {
+            width: 100%;
+        }
+
+        @media(min-width:1024px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
     }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        button {
+            cursor: pointer;
+            width: 100%;
+            padding: 1rem 2rem;
+            background-color: #D27D2D;
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 0.50rem;
+        }
+    }
+
     .result {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         background-color: #D27D2D;
-        color: white;
         padding: 2rem 1.5rem;
         border-radius: 1rem;
+
         p {
-            max-width: 40ch;
+            max-width: 30ch;
+        }
+
+        h1 {
+            font-size: 72px;
         }
 
         @media(min-width:768px) {
             flex-direction: row;
+            align-items: center;
             gap: 5rem;
+            padding: 3rem;
         }
     }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Home from "./pages/Home";
 import Layout from "./layout/Layout";
 import BMICalculator from "./pages/BMICalculator";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <>
           <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
             <Route path="calculator" element={<BMICalculator />} />
           </Route>
         </>
