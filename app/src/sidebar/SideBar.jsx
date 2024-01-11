@@ -7,7 +7,7 @@ function SideBar() {
   const [toggle, setToggle] = React.useState(false);
   return (
     <div className={styles.wrapper}>
-      <Link to="/">
+      <Link to="user">
         <h1>MyFitnessPlus+</h1>
       </Link>
 
@@ -34,10 +34,12 @@ function SideBar() {
 
       <hr className={styles.link}></hr>
 
-      <button className={styles.link}>
-        <img src="images/icons8-user-30.png" />
-        Jbautista
-      </button>
+      <Link to="user" className={styles.link}>
+        <button>
+          <img src="images/icons8-user-30.png" />
+          Guest
+        </button>
+      </Link>
 
       <Link to="settings" className={styles.link}>
         <button>
@@ -78,7 +80,7 @@ function SideBar() {
             <hr></hr>
             <button>
               <img src="images/icons8-user-30.png" />
-              Jbautista
+              Guest
             </button>
             <button>
               <img src="images/icons8-settings-50.png" />

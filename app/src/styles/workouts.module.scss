@@ -1,0 +1,20 @@
+.container {
+    text-align: center;
+    padding-inline: 0.5rem;
+
+    .buttons {
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        button {
+            cursor: pointer;
+            background-color: #D27D2D;
+            padding: 0.5rem 1rem;
+            border: none;
+            color: white;
+            border-radius: 1.25rem;
+        }
+    }
+}
