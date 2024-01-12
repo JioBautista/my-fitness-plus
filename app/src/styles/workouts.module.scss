@@ -32,15 +32,6 @@
         padding: 1rem;
     }
 
-    .settings {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin-bottom: 1rem;
-        @include buttonStyles()
-    }
-
     .buttons {
         margin-inline: auto;
         display: flex;
@@ -49,5 +40,37 @@
         gap: 1rem;
 
         @include buttonStyles()
+    }
+
+    .workouts {
+        width: 80%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: #D27D2D;
+        border-radius: 1.50rem;
+        padding: 2rem;
+
+        button {
+            cursor: pointer;
+            padding: 0.75rem 1.25rem;
+            border: none;
+            color: white;
+            border-radius: 1.25rem;
+            background-color: #DB9757;
+        }
+    }
+
+    @media(min-width:768px) {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        grid-template-areas: "text text";
+        
+        h2 {
+            grid-area: text;
+        }
     }
 }
