@@ -18,33 +18,10 @@
     gap: 1rem;
     padding-inline: 0.5rem;
 
-    ul {
-        width: 100%;
-        text-align: center;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        border: 1px solid white;
-        border-radius: 0.50rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
-    }
-
-    .buttons {
-        margin-inline: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-
-        @include buttonStyles()
-    }
 
     .workouts {
-        width: 80%;
-        max-width: 300px;
+        width: 100%;
+        max-width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
