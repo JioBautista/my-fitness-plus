@@ -18,6 +18,13 @@ function SideBar() {
         </button>
       </Link>
 
+      <Link to="programs" className={styles.link}>
+        <button>
+          <img src="images/icons8-workout-66.png" />
+          PROGRAMS
+        </button>
+      </Link>
+
       <Link to="nutrition" className={styles.link}>
         <button>
           <img src="images/icons8-nutrition-32.png" />
