@@ -1,0 +1,25 @@
+.container {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    a {
+      background-color: #D27D2D;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 1rem;
+    }
+  }
+}
