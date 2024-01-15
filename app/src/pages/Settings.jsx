@@ -39,6 +39,7 @@ function Settings() {
         </div>
 
         <button>SAVE</button>
+        <button>LOG OUT</button>
       </div>
     </div>
   );
