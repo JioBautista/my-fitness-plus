@@ -18,7 +18,7 @@
 
     input {
         width: 80%;
-        background-color: #E5E4E2;
+        background-color: #EDEDED;
         border: none;
         border-radius: 1.25rem;
         padding: 1rem 2rem;
@@ -27,7 +27,7 @@
     button {
         cursor: pointer;
         width: 80%;
-        background-color: #D27D2D;
+        background: #DA0037;
         border-radius: 1.25rem;
         border: none;
         padding: 1rem 2rem;
@@ -37,7 +37,7 @@
     a {
         cursor: pointer;
         text-decoration: underline;
-        color: blue;
+        color: #DA0037;
     }
     form {
         width: 100%;
@@ -50,6 +50,6 @@
 
 .forgot {
     margin-bottom: 1rem;
-    color: #71797E;
+    color: #EDEDED;
     font-size: 12px;
 }
