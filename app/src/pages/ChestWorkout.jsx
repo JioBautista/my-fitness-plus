@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-function WorkOuts() {
+function ChestWorkout() {
   const [data, setData] = React.useState("");
 
   useEffect(() => {
@@ -33,4 +33,4 @@ function WorkOuts() {
   );
 }
 
-export default WorkOuts;
+export default ChestWorkout;

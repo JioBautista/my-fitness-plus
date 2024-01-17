@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./layout/Layout";
 import LogInForm from "./loginForm/LogInForm";
-import WorkOuts from "./pages/WorkOuts";
+import ChestWorkout from "./pages/ChestWorkout";
 import Nutrition from "./pages/Nutrition";
 import BMICalculator from "./pages/BMICalculator";
 import Settings from "./pages/Settings";
@@ -15,7 +15,7 @@ function App() {
         <>
           <Route path="/" element={<Layout />}>
             <Route path="/workouts" element={<WorkoutsLayout />}>
-              <Route path="chest"element={<WorkOuts />} />
+              <Route path="chest" element={<ChestWorkout />} />
             </Route>
             <Route path="nutrition" element={<Nutrition />} />
             <Route path="calculator" element={<BMICalculator />} />
