@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
 function WorkOuts() {
-  const [data, setData] = React.useState([]);
+  const [data, setData] = React.useState("");
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch("http://localhost:3000/chest")
       .then((res) => {
         return res.json();
@@ -13,8 +13,22 @@ function WorkOuts() {
         setData(data);
       });
   }, []);
-  
-  return <div>WorkOuts</div>;
+
+  return (
+    <div>
+      {data &&
+        data.map((items) => {
+          return (
+            <>
+              <div>
+                <h2>{items.name}</h2>
+                <p>{items.instructions}</p>
+              </div>
+            </>
+          );
+        })}
+    </div>
+  );
 }
 
 export default WorkOuts;

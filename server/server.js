@@ -3,6 +3,8 @@ const app = express();
 const cors = require('cors')
 const { chestExercises, shoulderExercises } = require("./data/exerciseData");
 
+app.use(cors())
+
 app.get("/chest", (req, res) => {
   res.json(chestExercises);
 });
