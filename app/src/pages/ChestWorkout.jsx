@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import styles from "../styles/fixedmenu.module.scss";
 function ChestWorkout() {
   const [data, setData] = React.useState("");
 
@@ -16,7 +16,7 @@ function ChestWorkout() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       {data ? (
         data.map((items) => (
           <>
@@ -31,7 +31,7 @@ function ChestWorkout() {
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-               ></iframe>
+              ></iframe>
             </div>
           </>
         ))

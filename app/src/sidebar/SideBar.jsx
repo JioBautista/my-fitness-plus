@@ -8,7 +8,7 @@ function SideBar() {
   return (
     <div className={styles.wrapper}>
       <Link to="user">
-        <h1>MyFitnessPlus+</h1>
+        <h1>FitSimple</h1>
       </Link>
 
       <Link to="workouts" className={styles.link}>
