@@ -24,14 +24,14 @@ function ChestWorkout() {
               <h2>{items.name}</h2>
               <p>{items.instructions}</p>
               <iframe
-                width="560"
-                height="315"
+                width="50%"
+                height="250px"
                 src={items.videos}
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-              ></iframe>
+               ></iframe>
             </div>
           </>
         ))
