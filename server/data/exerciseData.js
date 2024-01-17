@@ -4,6 +4,7 @@ const chestExercises = [
     name: "Push-up",
     instructions:
       "Lie prone with forefeet on floor and hands slightly wider than shoulder width. Raise body up off floor by extending arms with body straight. Keeping body straight, lower body to floor by bending arms. Push body up until arms are extended. Repeat",
+    videos: "https://www.youtube.com/embed/IODxDxX7oi4?si=aMN8o6A9bP3T18fp",
   },
   {
     id: 2,
