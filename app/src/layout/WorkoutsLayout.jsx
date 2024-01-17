@@ -8,7 +8,7 @@ function WorkoutsLayout() {
       <h1>EXERCISE CATEGORIES</h1>
 
       <div className={styles.links}>
-        <Link>Chest</Link>
+        <Link to="/workouts/chest">Chest</Link>
         <Link>Shoulders</Link>
         <Link>Back</Link>
         <Link>Biceps</Link>

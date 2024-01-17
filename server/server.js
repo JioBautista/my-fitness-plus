@@ -1,17 +1,17 @@
-const express = require('express')
+const express = require("express");
 const app = express();
+const cors = require('cors')
+const { chestExercises, shoulderExercises } = require("./data/exerciseData");
 
-const requestTime = function (req, res, next){
-    req.requestTime = Date.now()
-    next()
-}
+app.use(cors({
+    origin:"http://localhost:5173/"
+}))
+app.get("/chest", (req, res) => {
+  res.json(chestExercises);
+});
 
-app.use(requestTime)
-
-app.get('/', (req, res) => {
-    let responseText = 'Hello World! <br>'
-    responseText += `<small>Requested at: ${req.requestTime}</small>`
-    res.send(responseText)
-})
+app.get("/shoulders", (req, res) => {
+  res.json(shoulderExercises);
+});
 
 app.listen(3000);
