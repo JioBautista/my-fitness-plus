@@ -13,6 +13,7 @@ function WorkOuts() {
         setData(data);
       });
   }, []);
+  
   return <div>WorkOuts</div>;
 }
 
