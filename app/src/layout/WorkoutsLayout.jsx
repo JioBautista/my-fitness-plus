@@ -5,8 +5,7 @@ import styles from "../styles/workoutslayout.module.scss";
 function WorkoutsLayout() {
   return (
     <div className={styles.container}>
-      <h1>EXERCISE CATEGORIES</h1>
-
+      <h1>EXERCISE CATEGORIES BASED ON MUSCLE GROUPS</h1>
       <div className={styles.links}>
         <Link to="/workouts/chest">Chest</Link>
         <Link>Shoulders</Link>

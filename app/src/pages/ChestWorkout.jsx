@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "../styles/fixedmenu.module.scss";
+import styles from "../styles/exercises.module.scss"
 function ChestWorkout() {
   const [data, setData] = React.useState("");
 
@@ -16,16 +16,16 @@ function ChestWorkout() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div>
       {data ? (
         data.map((items) => (
           <>
-            <div>
+            <div className={styles.wrapper}>
               <h2>{items.name}</h2>
               <p>{items.instructions}</p>
               <iframe
-                width="50%"
-                height="250px"
+                width="100%"
+                height="315"
                 src={items.videos}
                 title="YouTube video player"
                 frameborder="0"

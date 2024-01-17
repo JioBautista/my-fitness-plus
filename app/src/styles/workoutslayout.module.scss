@@ -14,13 +14,21 @@
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
+    margin-bottom: 1rem;
 
     a {
       background-color: #171717;
       padding: 0.5rem 1rem;
       text-decoration: none;
       color: white;
-      border-radius: 1rem;
+      border-radius: 0.25rem;
+    }
+  }
+  @media (min-width:768px) {
+    padding-block: 3rem;
+
+    a {
+      font-size: 22px;
     }
   }
 }

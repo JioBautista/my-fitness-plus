@@ -7,7 +7,7 @@ function SideBar() {
   const [toggle, setToggle] = React.useState(false);
   return (
     <div className={styles.wrapper}>
-      <Link to="user">
+      <Link to="/">
         <h1>FitSimple</h1>
       </Link>
 

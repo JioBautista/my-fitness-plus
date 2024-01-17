@@ -17,7 +17,7 @@ function LogInForm() {
 
   return (
     <div className={styles.wrapper}>
-      <h1>MyFitnessPlus+</h1>
+      <h1>FitSimple</h1>
       <h2>Welcome Back</h2>
 
       <form onSubmit={handleSubmit(onSubmit)}>

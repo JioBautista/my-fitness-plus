@@ -14,12 +14,12 @@ function App() {
       <Routes>
         <>
           <Route path="/" element={<Layout />}>
+            <Route index element={<LogInForm />} />
             <Route path="/workouts" element={<WorkoutsLayout />}>
               <Route path="chest" element={<ChestWorkout />} />
             </Route>
             <Route path="nutrition" element={<Nutrition />} />
             <Route path="calculator" element={<BMICalculator />} />
-            <Route path="user" element={<LogInForm />} />
             <Route path="settings" element={<Settings />} />
           </Route>
         </>
