@@ -11,22 +11,24 @@ function WorkOuts() {
       .then((data) => {
         console.log(data);
         setData(data);
-      });
+      })
+      .catch((error) => console.log("Error", error));
   }, []);
 
   return (
     <div>
-      {data &&
-        data.map((items) => {
-          return (
-            <>
-              <div>
-                <h2>{items.name}</h2>
-                <p>{items.instructions}</p>
-              </div>
-            </>
-          );
-        })}
+      {data ? (
+        data.map((items) => (
+          <>
+            <div>
+              <h2>{items.name}</h2>
+              <p>{items.instructions}</p>
+            </div>
+          </>
+        ))
+      ) : (
+        <h1>Page Not Found</h1>
+      )}
     </div>
   );
 }
