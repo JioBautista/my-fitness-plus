@@ -11,16 +11,6 @@ app.get("/chest", (req, res) => {
 });
 
 app.get("/shoulders", (req, res) => {
-  // res.json(shoulderExercises);
-  // const options = {
-  //   method: "GET",
-  //   url: "https://api.api-ninjas.com/v1/exercises?muscle=shoulders",
-  //   headers: {
-  //     "X-Api-Key": "NiLaSdJJjrHz3MATgl3Tmg==DZxPhLrznogMX1ot",
-  //   },
-  // };
-  // axios.request(options).then((response) => res.json(response.data));
-
   axios({
     method: "get",
     url: "https://api.api-ninjas.com/v1/exercises?muscle=shoulders",
