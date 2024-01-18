@@ -17,8 +17,9 @@ function LogInForm() {
 
   return (
     <div className={styles.wrapper}>
-      <h1>FitSimple</h1>
-      <h2>Welcome Back</h2>
+      <h1>Start your fitness journey</h1>
+      <h1>The simple way</h1>
+      <h2>Create account or enter as guest</h2>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
@@ -43,6 +44,7 @@ function LogInForm() {
           </p>
         )}
         <button>LOG IN</button>
+        <button>ENTER AS GUEST</button>
       </form>
       <p className={styles.forgot}>
         Forgot your Password or need help loggin in? <a>Click Here</a>

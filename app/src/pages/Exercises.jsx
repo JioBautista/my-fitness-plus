@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/exercises.module.scss";
 
-function ShoulderWorkout() {
+function Exercises({ params }) {
   const [data, setData] = React.useState("");
 
-  React.useEffect(() => {
-    fetch(`http://localhost:3000/shoulders`)
+  function fetchAPI() {
+    fetch(`http://localhost:3000/workouts/${params}`)
       .then((res) => {
         return res.json();
       })
@@ -14,26 +14,22 @@ function ShoulderWorkout() {
         setData(data);
       })
       .catch((error) => console.log("Error", error));
-  }, []);
+  }
 
-  console.log(data)
+  useEffect(() => {
+    fetchAPI();
+  }, [params]);
+
   return (
-    <div>
+    <div className={styles.container}>
       {data ? (
         data.map((items) => (
           <React.Fragment key={items.id}>
             <div className={styles.wrapper} key={items.id}>
               <h2>{items.name}</h2>
+              <h3> Good for: <span>{items.difficulty}</span></h3>
+              <p>Equipment needed: {items.equipment}</p>
               <p>{items.instructions}</p>
-              <iframe
-                width="100%"
-                height="315"
-                src={items.videos}
-                title="YouTube video player"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                allowFullScreen
-              ></iframe>
             </div>
           </React.Fragment>
         ))
@@ -44,4 +40,4 @@ function ShoulderWorkout() {
   );
 }
 
-export default ShoulderWorkout;
+export default Exercises;

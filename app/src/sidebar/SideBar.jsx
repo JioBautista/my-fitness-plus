@@ -26,10 +26,10 @@ function SideBar() {
           NUTRITION
       </Link>
 
-      {/* <Link to="calculator" className={styles.link}>
+      <Link to="calculator" className={styles.link}>
           <img src="/images/icons8-calculator-64.png" />
           BMI CALCULATOR
-      </Link> */}
+      </Link>
 
       <hr className={styles.link}></hr>
 
