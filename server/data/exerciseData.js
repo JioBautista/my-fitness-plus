@@ -31,19 +31,32 @@ const chestExercises = [
 
 const shoulderExercises = [
   {
+    id: 1,
     name: "Barbell Military Press",
     instructions:
       "Grasp barbell from rack or clean barbell from floor with overhand grip, slightly wider than shoulder width. Position bar in front of neck. Press bar upward until arms are extended overhead. Lower to front of neck and repeat.",
+    videos: "https://www.youtube.com/embed/G2qpTG1Eh40?si=j7-f65cZCKJjuEu7",
   },
   {
+    id: 2,
     name: "Dumbbell Shoulder Press",
     instructions:
       "Position dumbbells to each side of shoulders with elbows below wrists. Press dumbbells upward until arms are extended overhead. Lower to sides of shoulders and repeat.",
+    videos: "https://www.youtube.com/embed/HzIiNhHhhtA?si=44SSWxbLDi9WDBAb",
   },
   {
+    id: 3,
     name: "Dumbbell Lateral Raise",
     instructions:
       "Grasp dumbbells in front of thighs with elbows slightly bent. Bend over slightly with hips and knees bent slightly. Raise upper arms to sides until slightly bent elbows are shoulder height while maintaining elbows' height above or equal to wrists. Lower and repeat.",
+    videos: "https://www.youtube.com/embed/OuG1smZTsQQ?si=lHDKepchS7sStk9m",
+  },
+  {
+    id: 4,
+    name: "Dumbbell Front Raise",
+    instructions:
+      "Grasp dumbbells in both hands. Position dumbbells in front of upper legs with elbows straight or slightly bent. Raise dumbbells forward and upward until upper arms are above horizontal. Lower and repeat.",
+    videos: "https://www.youtube.com/embed/hRJ6tR5-if0?si=b89iQ1Mfqkc7lS4O",
   },
 ];
 

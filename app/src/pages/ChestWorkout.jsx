@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import styles from "../styles/exercises.module.scss"
+import styles from "../styles/exercises.module.scss";
+
 function ChestWorkout() {
   const [data, setData] = React.useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/chest")
+    fetch(`http://localhost:3000/chest`)
       .then((res) => {
         return res.json();
       })
@@ -19,8 +20,8 @@ function ChestWorkout() {
     <div>
       {data ? (
         data.map((items) => (
-          <>
-            <div className={styles.wrapper}>
+          <React.Fragment key={items.id}>
+            <div className={styles.wrapper} key={items.id}>
               <h2>{items.name}</h2>
               <p>{items.instructions}</p>
               <iframe
@@ -28,12 +29,12 @@ function ChestWorkout() {
                 height="315"
                 src={items.videos}
                 title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                allowFullScreen
               ></iframe>
             </div>
-          </>
+          </React.Fragment>
         ))
       ) : (
         <h1>Page Not Found</h1>
