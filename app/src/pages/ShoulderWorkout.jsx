@@ -16,6 +16,7 @@ function ShoulderWorkout() {
       .catch((error) => console.log("Error", error));
   }, []);
 
+  console.log(data)
   return (
     <div>
       {data ? (
