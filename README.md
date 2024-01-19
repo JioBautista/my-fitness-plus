@@ -3,10 +3,11 @@
 
 Features
 - user log in/ creation
+- edit user info and log in
 - nutrition tracker
 - BMI calculator
-- set, edit, track goals
-- edit user info and log in
+- Exercise category
+- Workout programs
 
 Daily Tasks
 
@@ -14,3 +15,4 @@ Daily Tasks
 - Learn environmental variables
 - Learn how to use dotenv
 - Hide API key
+- Research CSS link dropdowns and update the exercise links

@@ -6,8 +6,6 @@ require('dotenv').config()
 
 app.use(cors());
 
-console.log(process.env)
-
 app.get("/workouts/:muscle", (req, res) => {
   const param = req.params.muscle;
   const options = {
