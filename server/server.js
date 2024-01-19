@@ -6,6 +6,7 @@ require('dotenv').config()
 
 app.use(cors());
 
+console.log(process.env)
 
 app.get("/workouts/:muscle", (req, res) => {
   const param = req.params.muscle;
@@ -13,7 +14,7 @@ app.get("/workouts/:muscle", (req, res) => {
     method: "GET",
     url: `https://api.api-ninjas.com/v1/exercises?muscle=${param}&difficulty=beginner&type=strength`,
     headers: {
-      "X-Api-Key": "NiLaSdJJjrHz3MATgl3Tmg==DZxPhLrznogMX1ot",
+      "X-Api-Key": process.env.EXERCISE_API_KEY,
     },
   };
   axios.request(options).then((response) => res.json(response.data));
