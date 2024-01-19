@@ -22,12 +22,16 @@ function Exercises({ params }) {
 
   return (
     <div className={styles.container}>
+      <h1>Exercises based on muscle group</h1>
       {data ? (
         data.map((items) => (
           <React.Fragment key={items.id}>
             <div className={styles.wrapper} key={items.id}>
               <h2>{items.name}</h2>
-              <h3> Good for: <span>{items.difficulty}</span></h3>
+              <h3>
+                {" "}
+                Good for: <span>{items.difficulty}</span>
+              </h3>
               <p>Equipment needed: {items.equipment}</p>
               <p>{items.instructions}</p>
             </div>

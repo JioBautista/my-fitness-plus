@@ -3,10 +3,10 @@ import { Outlet, Link } from "react-router-dom";
 import SideBar from "../sidebar/SideBar";
 import styles from "../styles/layout.module.scss";
 
-function Layout() {
+function Layout({ grabUrl }) {
   return (
     <div className={styles.container}>
-      <SideBar />
+      <SideBar grabUrl={grabUrl}/>
       <Outlet />
     </div>
   );
