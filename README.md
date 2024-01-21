@@ -16,3 +16,8 @@ Daily Tasks
 - Learn how to use dotenv
 - Hide API key
 - Research CSS link dropdowns and update the exercise links
+
+01/21/19
+- Remove BMI component
+- Finish mobile/tablet navigation bar
+- Create exercise api from server

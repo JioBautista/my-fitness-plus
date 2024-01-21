@@ -59,11 +59,6 @@ function SideBar({ grabUrl }) {
         NUTRITION
       </Link>
 
-      <Link to="calculator" className={styles.link}>
-        <img src="/images/icons8-calculator-64.png" />
-        BMI CALCULATOR
-      </Link>
-
       <hr className={styles.link}></hr>
 
       <Link to="settings" className={styles.link}>
@@ -76,6 +71,76 @@ function SideBar({ grabUrl }) {
         onClick={() => setToggle(!toggle)}
         className={styles.close}
       />
+
+      {/* TOGGLE SIDEBAR MOBILE & TABLET SCREEN SIZES*/}
+      {toggle && (
+        <>
+          <div className={styles.collapsedBar}>
+            <div className={styles.dropdown}>
+              <Link>
+                <img src="/images/icons8-workout-50.png" />
+                EXERCISES
+              </Link>
+
+              <div
+                className={styles.dropdowncontent}
+                style={{ position:"relative" }}
+              >
+                <Link to="/workouts/chest" onClick={() => handleClick("chest")}>
+                  Chest
+                </Link>
+                <Link
+                  to="/workouts/shoulders"
+                  onClick={() => handleClick("shoulders")}
+                >
+                  Shoulders
+                </Link>
+                <Link
+                  to="/workouts/middle_back"
+                  onClick={() => handleClick("middle_back")}
+                >
+                  Back
+                </Link>
+                <Link
+                  to="/workouts/biceps"
+                  onClick={() => handleClick("biceps")}
+                >
+                  Biceps
+                </Link>
+                <Link
+                  to="/workouts/triceps"
+                  onClick={() => handleClick("triceps")}
+                >
+                  Triceps
+                </Link>
+                <Link
+                  to="/workouts/glutes"
+                  onClick={() => handleClick("glutes")}
+                >
+                  Legs
+                </Link>
+              </div>
+            </div>
+
+            <Link to="programs">
+              <img src="/images/icons8-workout-66.png" />
+              PROGRAMS
+            </Link>
+
+            <Link to="nutrition">
+              <img src="/images/icons8-nutrition-32.png" />
+              NUTRITION
+            </Link>
+
+            <hr></hr>
+
+            <Link to="settings">
+              <img src="/images/icons8-settings-50.png" />
+              Settings
+            </Link>
+          </div>
+        </>
+      )}
     </div>
   );
 }
