@@ -5,7 +5,7 @@ Features
 - user log in/ creation
 - edit user info and log in
 - nutrition tracker
-- BMI calculator
+- BMI calculator [removed]
 - Exercise category
 - Workout programs
 
