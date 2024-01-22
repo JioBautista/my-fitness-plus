@@ -25,25 +25,23 @@ function SideBar({ grabUrl }) {
           <Link to="/workouts/chest" onClick={() => handleClick("chest")}>
             Chest
           </Link>
+
           <Link
             to="/workouts/shoulders"
             onClick={() => handleClick("shoulders")}
           >
             Shoulders
           </Link>
-          <Link
-            to="/workouts/middle_back"
-            onClick={() => handleClick("middle_back")}
-          >
+
+          <Link to="/workouts/back" onClick={() => handleClick("back")}>
             Back
           </Link>
-          <Link to="/workouts/biceps" onClick={() => handleClick("biceps")}>
-            Biceps
+
+          <Link to="/workouts/arms" onClick={() => handleClick("arms")}>
+            Arms
           </Link>
-          <Link to="/workouts/triceps" onClick={() => handleClick("triceps")}>
-            Triceps
-          </Link>
-          <Link to="/workouts/glutes" onClick={() => handleClick("glutes")}>
+
+          <Link to="/workouts/legs" onClick={() => handleClick("legs")}>
             Legs
           </Link>
         </div>
@@ -84,39 +82,31 @@ function SideBar({ grabUrl }) {
 
               <div
                 className={styles.dropdowncontent}
-                style={{ position:"relative" }}
+                style={{ position: "relative" }}
               >
                 <Link to="/workouts/chest" onClick={() => handleClick("chest")}>
                   Chest
                 </Link>
+
                 <Link
                   to="/workouts/shoulders"
                   onClick={() => handleClick("shoulders")}
                 >
                   Shoulders
                 </Link>
-                <Link
-                  to="/workouts/middle_back"
-                  onClick={() => handleClick("middle_back")}
-                >
+
+                <Link to="/workouts/back" onClick={() => handleClick("back")}>
                   Back
                 </Link>
+
                 <Link
-                  to="/workouts/biceps"
-                  onClick={() => handleClick("biceps")}
+                  to="/workouts/arms"
+                  onClick={() => handleClick("arms")}
                 >
-                  Biceps
+                  Arms
                 </Link>
-                <Link
-                  to="/workouts/triceps"
-                  onClick={() => handleClick("triceps")}
-                >
-                  Triceps
-                </Link>
-                <Link
-                  to="/workouts/glutes"
-                  onClick={() => handleClick("glutes")}
-                >
+
+                <Link to="/workouts/legs" onClick={() => handleClick("legs")}>
                   Legs
                 </Link>
               </div>

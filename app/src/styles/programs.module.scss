@@ -1,0 +1,35 @@
+.container {
+    height: 100vh;
+    padding: 2rem;
+}
+
+.wrapper {
+    background-color: #171717;
+    border-radius: 0.50rem;
+    max-width: 500px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "p btn"
+            "p btn";
+
+        align-items: center;
+
+
+        button {
+            grid-area: btn;
+            padding: 1rem 1.5rem;
+            border-radius: 0.50rem;
+            border: none;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

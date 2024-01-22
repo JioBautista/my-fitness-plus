@@ -2,8 +2,15 @@ const express = require("express");
 const app = express();
 const axios = require("axios");
 const cors = require("cors");
-const { chestExercises, shoulderExercises } = require("./data/exerciseData");
 require("dotenv").config();
+
+const {
+  chestExercises,
+  shoulderExercises,
+  backExercises,
+  legsExercises,
+  armsExercises,
+} = require("./data/exerciseData");
 
 app.use(cors());
 
@@ -14,6 +21,12 @@ app.get("/workouts/:muscle", (req, res) => {
     res.send(chestExercises);
   } else if (param === "shoulders") {
     res.send(shoulderExercises);
+  } else if (param === "back") {
+    res.send(backExercises);
+  } else if (param === "legs") {
+    res.send(legsExercises);
+  } else if (param === "arms") {
+    res.send(armsExercises);
   }
 });
 
