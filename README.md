@@ -1,4 +1,4 @@
-# my-fitness-plus
+# FitSimple
  Full stack fitness app
 
 Features
