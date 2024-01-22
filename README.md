@@ -2,12 +2,13 @@
  Full stack fitness app
 
 Features
-- user log in/ creation
-- edit user info and log in
-- nutrition tracker
-- BMI calculator [removed]
+- User login/creation
+- Edit user info and login
+- Goal Tracker
 - Exercise category
 - Workout programs
+- Nutrition tracker
+- BMI calculator [removed]
 
 Daily Tasks
 
