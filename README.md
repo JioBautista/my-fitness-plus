@@ -21,3 +21,8 @@ Daily Tasks
 - Remove BMI component
 - Finish mobile/tablet navigation bar
 - Create exercise api from server
+
+01/22/19
+- Finish exercise API
+- Style and finish exercise component
+- Start programs component
