@@ -4,7 +4,7 @@ import styles from "../styles/programs.module.scss";
 function Programs() {
   return (
     <div className={styles.container}>
-      {/* FULL BODY PROGRAM */}
+
       <div className={styles.wrapper}>
         <h1>Fullbody Workout</h1>
         <div className={styles.grid}>
