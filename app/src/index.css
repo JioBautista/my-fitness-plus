@@ -18,9 +18,10 @@
 body {
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
-  background-color: #E5E4E2;
+  /* background-color: #E5E4E2; */
+  background-color:#112D4E;
   font-family: 'Roboto', sans-serif;
-  color:#EDEDED;
+  /* color:#EDEDED; */
 }
 /*
   5. Improve media defaults

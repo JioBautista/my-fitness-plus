@@ -5,7 +5,9 @@
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    background-color: #171717;
+    // background-color: #171717;
+    background-color: #3F72AF;
+
 
     a {
         display: flex;
@@ -25,7 +27,7 @@
 
     hr {
         align-self: stretch;
-        border: 1px solid #DA0037;
+        border: 1px solid white;
     }
 
     .link {
@@ -49,7 +51,7 @@
     .dropdowncontent {
         display: none;
         position: absolute;
-        background-color: #171717;
+        background-color: #3F72AF;
         width: 100%;
         border-radius: 0.25rem;
     }
@@ -59,7 +61,7 @@
     }
 
     .collapsedBar {
-        background-color: #171717;
+        background-color: #3F72AF;
         display: flex;
         flex-direction: column;
         align-items: center;

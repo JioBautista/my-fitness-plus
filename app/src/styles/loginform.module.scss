@@ -4,13 +4,15 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    max-width: 700px;
+    max-width: 800px;
     margin-inline: auto;
     padding-block: 5rem;
     gap: 1.5rem;
+    text-align: center;
 
     h1 {
         font-size: 52px;
+        line-height: 1.0;
     }
 
     input {
@@ -24,7 +26,7 @@
     button {
         cursor: pointer;
         width: 80%;
-        background: #DA0037;
+        background-color: #3F72AF;
         border-radius: 1.25rem;
         border: none;
         padding: 1rem 2rem;
@@ -34,15 +36,22 @@
     a {
         cursor: pointer;
         text-decoration: underline;
-        color: #DA0037;
+        color: #3F72AF;
     }
+
+    span {
+        text-decoration: underline;
+        color: #3F72AF;
+    }
+
     form {
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        margin-bottom: 1rem;
     }
+
     @media(min-width:768px) {
         h1 {
             font-size: 58px;
@@ -52,6 +61,17 @@
 
 .forgot {
     margin-bottom: 1rem;
-    color: #EDEDED;
     font-size: 12px;
+}
+
+.glasseffect {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5rem 2rem;
+    width: 100%;
 }
