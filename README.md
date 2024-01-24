@@ -30,3 +30,7 @@ Daily Tasks
 01/23/2024
 - Continue and style programs component
 - Start modal box component for programs component
+
+01/23/2024
+- Finish programs and modal box component
+- Work on nutrition component and start looking for nutrition API
