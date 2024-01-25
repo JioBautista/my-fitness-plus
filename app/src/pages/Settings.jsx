@@ -12,7 +12,7 @@ function Settings() {
             <h2>Email</h2>
             <p>pachojio@gmail.com</p>
           </div>
-          <img src="images/icons8-edit-64.png" />
+          <button>Edit</button>
         </div>
 
         <div className={styles.inputs}>
@@ -20,22 +20,14 @@ function Settings() {
             <h2>Username</h2>
             <p>Jbautista_</p>
           </div>
-          <img src="images/icons8-edit-64.png" />
+          <button>Edit</button>
         </div>
 
         <div className={styles.inputs}>
           <div>
             <h2>Password</h2>
           </div>
-          <img src="images/icons8-edit-64.png" />
-        </div>
-
-        <div className={styles.inputs}>
-          <div>
-            <h2>Language</h2>
-            <p>English(UK)</p>
-          </div>
-          <img src="images/icons8-edit-64.png" />
+          <button>Edit</button>
         </div>
 
         <button>SAVE</button>

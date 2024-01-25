@@ -8,10 +8,13 @@ function Programs() {
 
   return (
     <div className={styles.container}>
-      <h1>Workout Programs</h1>
+      <h1>
+        Workout programs designed for <span>beginners</span>
+      </h1>
       <div className={styles.wrapper}>
         <div className={styles.info}>
           <h1>Fullbody Workout</h1>
+          <img src="src/images/pexels-victor-freitas-2261477.jpg" />
           <div className={styles.grid}>
             <h3>Contains: 6 exercises</h3>
             <h3>Duration: 45min - 1hr</h3>
@@ -25,7 +28,8 @@ function Programs() {
         </div>
 
         <div className={styles.info}>
-          <h1>Upper/Lower Split Program</h1>
+          <h1>Upper/Lower Program</h1>
+          <img src="src/images/pexels-ketut-subiyanto-4720770.jpg" />
           <div className={styles.grid}>
             <h3>Contains: 5 exercises</h3>
             <h3>Duration: 45min - 1hr</h3>
@@ -35,6 +39,7 @@ function Programs() {
 
         <div className={styles.info}>
           <h1>Bodyweight Only</h1>
+          <img src="src/images/pexels-li-sun-2294361.jpg" />
           <div className={styles.grid}>
             <h3>Contains: 4 exercises</h3>
             <h3>Duration: 45min - 1hr</h3>
