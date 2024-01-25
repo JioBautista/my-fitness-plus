@@ -37,3 +37,4 @@ Daily Tasks
 
 01/25/2024
 - IMPORTANT complete programs component
+- Create a footer
