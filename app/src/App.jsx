@@ -25,8 +25,11 @@ function App() {
               path={`/workouts/${url}`}
               element={<Exercises params={url} />}
             />
-            <Route path="programs" element={<Programs />}>
-              <Route path="/programs/fullbodyworkout" element={<ModalBox />} />
+            <Route path="programs" element={<Programs grabUrl={grabUrl} params={url} />}>
+              <Route
+                path={`/programs/${url}`}
+                element={<ModalBox/>}
+              />
             </Route>
             <Route path="nutrition" element={<Nutrition />} />
             <Route path="settings" element={<Settings />} />

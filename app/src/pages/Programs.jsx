@@ -3,13 +3,36 @@ import styles from "../styles/programs.module.scss";
 import ModalBox from "../modalBox/ModalBox";
 import { Link } from "react-router-dom";
 
-function Programs() {
+function Programs({ grabUrl, params }) {
   const [toggle, setToggle] = React.useState(false);
+  const [data, setData] = React.useState("");
 
   const closeModal = (data) => {
     setToggle(data);
   };
 
+  const handleClick = (data) => {
+    setToggle(!toggle);
+    grabUrl(data);
+  };
+
+  function fetchAPI() {
+    fetch(`http://localhost:3000/programs/${params}`)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setData(data);
+      })
+      .catch((error) => console.log("Error", error));
+  }
+
+  React.useEffect(() => {
+    fetchAPI();
+  }, [params]);
+
+  console.log(data);
   return (
     <div className={styles.container}>
       <h1>
@@ -24,7 +47,7 @@ function Programs() {
             <h3>Duration: 45min - 1hr</h3>
             <Link
               to="/programs/fullbodyworkout"
-              onClick={() => setToggle(!toggle)}
+              onClick={() => handleClick("fullbodyworkout")}
             >
               View
             </Link>
@@ -62,7 +85,7 @@ function Programs() {
         </div>
       </div>
 
-      {toggle && <ModalBox closeModal={closeModal} />}
+      {toggle && <ModalBox closeModal={closeModal} serverData={data} />}
     </div>
   );
 }

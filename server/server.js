@@ -12,6 +12,8 @@ const {
   armsExercises,
 } = require("./data/exerciseData");
 
+const { fullBodyWorkout } = require("./data/programsData");
+
 app.use(cors());
 
 app.get("/workouts/:muscle", (req, res) => {
@@ -30,4 +32,11 @@ app.get("/workouts/:muscle", (req, res) => {
   }
 });
 
+app.get("/programs/:program", (req, res) => {
+  const param = req.params.program;
+
+  if (param === "fullbodyworkout") {
+    res.send(fullBodyWorkout);
+  }
+});
 app.listen(3000);
