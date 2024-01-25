@@ -3,6 +3,7 @@ import Layout from "./layout/Layout";
 import LogInForm from "./loginForm/LogInForm";
 import Exercises from "./pages/Exercises";
 import Programs from "./pages/Programs";
+import ModalBox from "./modalBox/ModalBox";
 import Nutrition from "./pages/Nutrition";
 import Settings from "./pages/Settings";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -24,7 +25,9 @@ function App() {
               path={`/workouts/${url}`}
               element={<Exercises params={url} />}
             />
-            <Route path="programs" element={<Programs />} />
+            <Route path="programs" element={<Programs />}>
+              <Route path="/programs/fullbodyworkout" element={<ModalBox />} />
+            </Route>
             <Route path="nutrition" element={<Nutrition />} />
             <Route path="settings" element={<Settings />} />
           </Route>
