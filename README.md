@@ -34,3 +34,6 @@ Daily Tasks
 01/23/2024
 - Finish programs and modal box component [Not complete]
 - Work on nutrition component and start looking for nutrition API [Not complete]
+
+01/25/2024
+- IMPORTANT complete programs component
