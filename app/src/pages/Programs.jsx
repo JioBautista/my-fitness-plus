@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 function Programs() {
   const [toggle, setToggle] = React.useState(false);
 
+  const closeModal = (data) => {
+    setToggle(data);
+  };
+
   return (
     <div className={styles.container}>
       <h1>
@@ -33,7 +37,12 @@ function Programs() {
           <div className={styles.grid}>
             <h3>Contains: 5 exercises</h3>
             <h3>Duration: 45min - 1hr</h3>
-            <Link to="/programs/upperbodyworkout">View</Link>
+            <Link
+              to="/programs/upperbodyworkout"
+              onClick={() => setToggle(!toggle)}
+            >
+              View
+            </Link>
           </div>
         </div>
 
@@ -43,12 +52,17 @@ function Programs() {
           <div className={styles.grid}>
             <h3>Contains: 4 exercises</h3>
             <h3>Duration: 45min - 1hr</h3>
-            <Link to="/programs/bodyweightonly">View</Link>
+            <Link
+              to="/programs/bodyweightonly"
+              onClick={() => setToggle(!toggle)}
+            >
+              View
+            </Link>
           </div>
         </div>
       </div>
 
-      {toggle && <ModalBox />}
+      {toggle && <ModalBox closeModal={closeModal} />}
     </div>
   );
 }

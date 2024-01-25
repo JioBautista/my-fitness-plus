@@ -36,5 +36,6 @@ Daily Tasks
 - Work on nutrition component and start looking for nutrition API [Not complete]
 
 01/25/2024
-- IMPORTANT complete programs component
-- Create a footer
+- IMPORTANT complete programs component [Complete]
+- Create a footer [Complete]
+- Finish modal box [Complete]
