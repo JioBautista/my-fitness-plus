@@ -40,3 +40,7 @@ Daily Tasks
 - Create a footer [Complete]
 - Finish modal box [Complete]
 - Create programs API
+
+01/26/2024
+- Finish modal box component [Complete]
+- Continue programs API [Complete]

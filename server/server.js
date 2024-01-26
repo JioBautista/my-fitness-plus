@@ -12,7 +12,7 @@ const {
   armsExercises,
 } = require("./data/exerciseData");
 
-const { fullBodyWorkout } = require("./data/programsData");
+const { fullBodyWorkout, upperLowerProgram, bodyweightOnly } = require("./data/programsData");
 
 app.use(cors());
 
@@ -37,6 +37,10 @@ app.get("/programs/:program", (req, res) => {
 
   if (param === "fullbodyworkout") {
     res.send(fullBodyWorkout);
+  } else if (param === "upperlowerworkout") {
+    res.send(upperLowerProgram);
+  } else if (param === "bodyweightonly") {
+    res.send(bodyweightOnly)
   }
 });
 app.listen(3000);

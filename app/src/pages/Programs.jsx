@@ -61,8 +61,8 @@ function Programs({ grabUrl, params }) {
             <h3>Contains: 5 exercises</h3>
             <h3>Duration: 45min - 1hr</h3>
             <Link
-              to="/programs/upperbodyworkout"
-              onClick={() => setToggle(!toggle)}
+              to="/programs/upperlowerworkout"
+              onClick={() => handleClick("upperlowerworkout")}
             >
               View
             </Link>
@@ -77,7 +77,7 @@ function Programs({ grabUrl, params }) {
             <h3>Duration: 45min - 1hr</h3>
             <Link
               to="/programs/bodyweightonly"
-              onClick={() => setToggle(!toggle)}
+              onClick={() => handleClick("bodyweightonly")}
             >
               View
             </Link>
