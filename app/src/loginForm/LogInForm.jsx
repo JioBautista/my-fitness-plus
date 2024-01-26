@@ -23,39 +23,37 @@ function LogInForm() {
       </h1>
       <h2>Create account or enter as guest</h2>
 
-      <div className={styles.glasseffect}>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input
-            placeholder="Username"
-            name="username"
-            {...register("username", { required: true })}
-          />
-          {errors.username && errors.username.type === "required" && (
-            <p style={{ color: "red", alignSelf: "start", marginLeft: "5rem" }}>
-              Cannot be empty
-            </p>
-          )}
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            {...register("password", { required: true })}
-          />
-          {errors.password && errors.password.type === "required" && (
-            <p style={{ color: "red", alignSelf: "start", marginLeft: "5rem" }}>
-              Cannot be empty
-            </p>
-          )}
-          <button>LOG IN</button>
-          <button>ENTER AS GUEST</button>
-        </form>
-        <p className={styles.forgot}>
-          Forgot your Password or need help loggin in? <a>Click Here</a>
-        </p>
-        <p>
-          Don't have an account? <a>Create one here</a>
-        </p>
-      </div>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input
+          placeholder="Username"
+          name="username"
+          {...register("username", { required: true })}
+        />
+        {errors.username && errors.username.type === "required" && (
+          <p style={{ color: "red", alignSelf: "start", marginLeft: "5rem" }}>
+            Cannot be empty
+          </p>
+        )}
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          {...register("password", { required: true })}
+        />
+        {errors.password && errors.password.type === "required" && (
+          <p style={{ color: "red", alignSelf: "start", marginLeft: "5rem" }}>
+            Cannot be empty
+          </p>
+        )}
+        <button>LOG IN</button>
+        <button>ENTER AS GUEST</button>
+      </form>
+      <p className={styles.forgot}>
+        Forgot your Password or need help loggin in? <a>Click Here</a>
+      </p>
+      <p>
+        Don't have an account? <a>Create one here</a>
+      </p>
     </div>
   );
 }

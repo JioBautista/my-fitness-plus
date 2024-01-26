@@ -44,3 +44,4 @@ Daily Tasks
 01/26/2024
 - Finish modal box component [Complete]
 - Continue programs API [Complete]
+- Edit login component styles [Complete]
