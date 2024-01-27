@@ -1,19 +1,81 @@
 import React from "react";
 import styles from "../styles/nutrition.module.scss";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
 function Nutrition() {
   const [data, setData] = React.useState("");
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    axios
+      .post(`http://localhost:3000/nutrition/${data.exampleRequired}`)
+      .then((response) => setData(response.data))
+      .catch((error) => console.log(error));
+  };
 
   const handleChange = (event) => {
     setData(event.target.value);
   };
+
+  console.log(data);
   return (
     <div className={styles.container}>
       <h1>Nutrition Tracker</h1>
-      <input type="date" />
-      <input onChange={handleChange} />
-      <p>{data}</p>
-      <button>Search</button>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input {...register("exampleRequired", { required: true })} />
+        {errors.exampleRequired && <span>This Field is Required</span>}
+        <input type="submit" />
+      </form>
+
+      {data && (
+        <div>
+          {data.foods.map((items) => (
+            <table>
+              <thead>
+                <th>Nutrition Facts</th>
+                <th>{items.food_name}</th>
+              </thead>
+              <tbody>
+                <>
+                  <tr>
+                    <td>Calories</td>
+                    <td>{items.nf_calories}</td>
+                  </tr>
+                  <tr>
+                    <td>Fat</td>
+                    <td>{items.nf_total_fat}</td>
+                  </tr>
+                  <tr>
+                    <td>Carbohydrates</td>
+                    <td>{items.nf_total_carbohydrate}</td>
+                  </tr>
+                  <tr>
+                    <td>Protein</td>
+                    <td>{items.nf_protein}</td>
+                  </tr>
+                  <tr>
+                    <td>Sugars</td>
+                    <td>{items.nf_sugars}</td>
+                  </tr>
+                  <tr>
+                    <td>Fiber</td>
+                    <td>{items.nf_dietary_fiber}</td>
+                  </tr>
+                  <tr>
+                    <td>Serving Unit</td>
+                    <td>{items.serving_unit}</td>
+                  </tr>
+                </>
+              </tbody>
+            </table>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

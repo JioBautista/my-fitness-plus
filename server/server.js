@@ -58,22 +58,6 @@ app.get("/programs/:program", (req, res) => {
   }
 });
 
-// app.get("/nutrition/:food", (req, res) => {
-//   const food = req.params.food
-
-//   axios
-//     .get(
-//       `https://trackapi.nutritionix.com/v2/search/instant/?query=${food}`,
-//       options
-//     )
-//     .then((response) => {
-//       res.json(response.data);
-//     })
-//     .catch((error) => {
-//       console.log("Error fetching data:", error);
-//     });
-// });
-
 app.post("/nutrition/:food", (req, res) => {
   const food = req.params.food;
   const postData = {

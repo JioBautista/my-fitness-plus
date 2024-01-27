@@ -34,4 +34,11 @@
         align-items: center;
         gap: 1rem;
     }
+    table {
+        width: 100%;
+    }
+    td {
+        padding: 1rem;
+        border: 1px solid black;
+    }
 }
