@@ -47,4 +47,4 @@ Daily Tasks
 - Edit login component styles [Complete]
 
 01/27/2024
-- Start nutrition component
+- Start nutrition component [InProgress]
