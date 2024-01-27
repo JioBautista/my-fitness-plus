@@ -12,9 +12,23 @@ const {
   armsExercises,
 } = require("./data/exerciseData");
 
-const { fullBodyWorkout, upperLowerProgram, bodyweightOnly } = require("./data/programsData");
+const {
+  fullBodyWorkout,
+  upperLowerProgram,
+  bodyweightOnly,
+} = require("./data/programsData");
+
+const options = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "x-app-id": process.env.NUTRITIONIX_APPLICATION_ID,
+    "x-app-key": process.env.NUTRITIONIX_API_KEY,
+  },
+};
 
 app.use(cors());
+// app.use(express.json());
 
 app.get("/workouts/:muscle", (req, res) => {
   const param = req.params.muscle;
@@ -40,7 +54,44 @@ app.get("/programs/:program", (req, res) => {
   } else if (param === "upperlowerworkout") {
     res.send(upperLowerProgram);
   } else if (param === "bodyweightonly") {
-    res.send(bodyweightOnly)
+    res.send(bodyweightOnly);
   }
 });
+
+// app.get("/nutrition/:food", (req, res) => {
+//   const food = req.params.food
+
+//   axios
+//     .get(
+//       `https://trackapi.nutritionix.com/v2/search/instant/?query=${food}`,
+//       options
+//     )
+//     .then((response) => {
+//       res.json(response.data);
+//     })
+//     .catch((error) => {
+//       console.log("Error fetching data:", error);
+//     });
+// });
+
+app.post("/nutrition/:food", (req, res) => {
+  const food = req.params.food;
+  const postData = {
+    query: food,
+  };
+
+  axios
+    .post(
+      "https://trackapi.nutritionix.com/v2/natural/nutrients",
+      postData,
+      options
+    )
+    .then((response) => {
+      res.json(response.data);
+    })
+    .catch((error) => {
+      console.error("Error", error);
+    });
+});
+
 app.listen(3000);
