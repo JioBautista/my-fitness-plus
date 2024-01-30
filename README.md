@@ -53,5 +53,5 @@ Daily Tasks
 - Continue nutrition component
 
 01/30/2024
-- Finish nutrition component
+- Finish nutrition component [Complete]
 - Start learning postgreSQL
