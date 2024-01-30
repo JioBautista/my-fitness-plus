@@ -33,46 +33,56 @@ function Nutrition() {
       </form>
 
       {data && (
-        <div>
+        <div className={styles.nutritioninfo}>
           {data.foods.map((items) => (
-            <table>
-              <thead>
-                <th>Nutrition Facts</th>
-                <th>{items.food_name}</th>
-              </thead>
-              <tbody>
-                <>
+            <>
+              <h1>{items.food_name}</h1>
+              <img src={items.photo.thumb}/>
+              <table>
+                <thead>
                   <tr>
-                    <td>Calories</td>
-                    <td>{items.nf_calories}</td>
+                    <th colSpan={2}>Nutrition Facts</th>
                   </tr>
-                  <tr>
-                    <td>Fat</td>
-                    <td>{items.nf_total_fat}</td>
-                  </tr>
-                  <tr>
-                    <td>Carbohydrates</td>
-                    <td>{items.nf_total_carbohydrate}</td>
-                  </tr>
-                  <tr>
-                    <td>Protein</td>
-                    <td>{items.nf_protein}</td>
-                  </tr>
-                  <tr>
-                    <td>Sugars</td>
-                    <td>{items.nf_sugars}</td>
-                  </tr>
-                  <tr>
-                    <td>Fiber</td>
-                    <td>{items.nf_dietary_fiber}</td>
-                  </tr>
-                  <tr>
-                    <td>Serving Unit</td>
-                    <td>{items.serving_unit}</td>
-                  </tr>
-                </>
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  <>
+                    <tr>
+                      <td>Calories</td>
+                      <td>{items.nf_calories}</td>
+                    </tr>
+                    <tr>
+                      <td>Fat</td>
+                      <td>{items.nf_total_fat}</td>
+                    </tr>
+                    <tr>
+                      <td>Carbohydrates</td>
+                      <td>{items.nf_total_carbohydrate}</td>
+                    </tr>
+                    <tr>
+                      <td>Protein</td>
+                      <td>{items.nf_protein}</td>
+                    </tr>
+                    <tr>
+                      <td>Sugars</td>
+                      <td>{items.nf_sugars}</td>
+                    </tr>
+                    <tr>
+                      <td>Fiber</td>
+                      <td>{items.nf_dietary_fiber}</td>
+                    </tr>
+                    <tr>
+                      <td>Serving Unit</td>
+                      <td>{items.serving_unit}</td>
+                    </tr>
+
+                    <tr>
+                      <td>Grams</td>
+                      <td>{items.serving_weight_grams}</td>
+                    </tr>
+                  </>
+                </tbody>
+              </table>
+            </>
           ))}
         </div>
       )}

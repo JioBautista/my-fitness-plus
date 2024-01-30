@@ -8,8 +8,14 @@
     h1 {
         margin-bottom: 2rem;
     }
+
     h2 {
         margin-bottom: 1rem;
+    }
+
+    img {
+        max-width: 300px;
+        margin-inline: auto;
     }
 
     input {
@@ -21,24 +27,20 @@
         border: none;
     }
 
-    ul {
-        border: 2px solid #EDEDED;
-        margin-bottom: 2rem;
-        padding: 1rem;
-        border-radius: 1rem;
+    td {
+        text-align: start;
+        padding: 0.25rem;
     }
-    li {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
+
     table {
         width: 100%;
+        border-spacing: 1rem;
+        padding: 1rem 2rem;
     }
-    td {
-        padding: 1rem;
-        border: 1px solid black;
-    }
+}
+
+.nutritioninfo {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
 }
