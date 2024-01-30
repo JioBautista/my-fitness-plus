@@ -18,6 +18,17 @@
         margin-inline: auto;
     }
 
+    button {
+        display: block;
+        margin-inline: auto;
+        margin-block: 1rem;
+        padding: 1rem;
+        background-color: #3F72AF;
+        color: #F9F7F7;
+        border: none;
+        border-radius: 0.25rem;
+    }
+
     input {
         display: block;
         width: 100%;
@@ -36,6 +47,9 @@
         width: 100%;
         border-spacing: 1rem;
         padding: 1rem 2rem;
+    }
+    @media(min-width:768px) {
+        padding: 3rem 1rem;
     }
 }
 

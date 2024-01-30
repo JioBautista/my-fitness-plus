@@ -25,11 +25,11 @@ function Nutrition() {
   console.log(data);
   return (
     <div className={styles.container}>
-      <h1>Nutrition Tracker</h1>
+      <h1>Search food for nutritional data</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register("exampleRequired", { required: true })} />
-        {errors.exampleRequired && <span>This Field is Required</span>}
-        <input type="submit" />
+        {errors.exampleRequired && <span>This field is Required</span>}
+        <button type="submit">Search for food</button>
       </form>
 
       {data && (
