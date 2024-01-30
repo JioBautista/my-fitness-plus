@@ -27,8 +27,8 @@ function Nutrition() {
         <input {...register("searchFood", { required: true })} />
 
         {errors.searchFood && <span>This field is Required</span>}
-        
-        <button type="submit">Search for food</button>
+
+        <button type="submit">Search</button>
       </form>
 
       {data && (
