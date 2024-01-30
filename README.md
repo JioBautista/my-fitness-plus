@@ -48,3 +48,10 @@ Daily Tasks
 
 01/27/2024
 - Start nutrition component [InProgress]
+
+01/29/2024
+- Continue nutrition component
+
+01/30/2024
+- Finish nutrition component
+- Start learning postgreSQL
