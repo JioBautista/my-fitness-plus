@@ -13,22 +13,21 @@ function Nutrition() {
 
   const onSubmit = (data) => {
     axios
-      .post(`http://localhost:3000/nutrition/${data.exampleRequired}`)
+      .post(`http://localhost:3000/nutrition/${data.searchFood}`)
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
-  };
-
-  const handleChange = (event) => {
-    setData(event.target.value);
   };
 
   console.log(data);
   return (
     <div className={styles.container}>
       <h1>Search food for nutritional data</h1>
+
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("exampleRequired", { required: true })} />
-        {errors.exampleRequired && <span>This field is Required</span>}
+        <input {...register("searchFood", { required: true })} />
+
+        {errors.searchFood && <span>This field is Required</span>}
+        
         <button type="submit">Search for food</button>
       </form>
 
@@ -37,7 +36,7 @@ function Nutrition() {
           {data.foods.map((items) => (
             <>
               <h1>{items.food_name}</h1>
-              <img src={items.photo.thumb}/>
+              <img src={items.photo.thumb} />
               <table>
                 <thead>
                   <tr>
