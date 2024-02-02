@@ -55,3 +55,6 @@ Daily Tasks
 01/30/2024
 - Finish nutrition component [Complete]
 - Start learning postgreSQL
+
+02/01/2024
+- Create sign up component & link it
