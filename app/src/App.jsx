@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "./layout/Layout";
 import LogInForm from "./loginForm/LogInForm";
 import SignUpForm from "./loginForm/SignUpForm";
+import ForgotPassword from "./loginForm/ForgotPassword";
 import Exercises from "./pages/Exercises";
 import Programs from "./pages/Programs";
 import ModalBox from "./modalBox/ModalBox";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Layout grabUrl={grabUrl} />}>
             <Route index element={<LogInForm />} />
             <Route path="signup" element={<SignUpForm />} />
+            <Route path="forgotpass" element={<ForgotPassword />} />
             <Route
               path={`/workouts/${url}`}
               element={<Exercises params={url} />}

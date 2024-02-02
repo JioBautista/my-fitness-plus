@@ -58,6 +58,9 @@
         gap: 1rem;
         margin-bottom: 1rem;
     }
+    label {
+        align-self: flex-start;
+    }
     @media(min-width:768px) {
         h1 {
             font-size: 58px;

@@ -46,7 +46,8 @@ function LogInForm() {
         <button>ENTER AS GUEST</button>
       </form>
       <p className={styles.forgot}>
-        Forgot your Password or need help loggin in? <a>Click Here</a>
+        Forgot your password or need help loggin in?{" "}
+        <Link to="/forgotpass">Click Here</Link>
       </p>
       <p>
         Don't have an account? <Link to="/signup">Create one here</Link>

@@ -58,3 +58,4 @@ Daily Tasks
 
 02/01/2024
 - Create sign up component & link it [Complete]
+- Create forgot password component & link it [Complete]
