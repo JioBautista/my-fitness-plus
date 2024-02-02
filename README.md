@@ -57,4 +57,4 @@ Daily Tasks
 - Start learning postgreSQL
 
 02/01/2024
-- Create sign up component & link it
+- Create sign up component & link it [Complete]
