@@ -22,8 +22,8 @@ function App() {
       <Routes>
         <>
           <Route path="/" element={<Layout grabUrl={grabUrl} />}>
-            <Route index element={<LogInForm />} />
-            <Route path="signup" element={<SignUpForm />} />
+            <Route path="login" element={<LogInForm />} />
+            <Route path="register" element={<SignUpForm />} />
             <Route path="forgotpass" element={<ForgotPassword />} />
             <Route
               path={`/workouts/${url}`}

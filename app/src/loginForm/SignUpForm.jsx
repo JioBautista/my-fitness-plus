@@ -16,7 +16,7 @@ function SignUpForm() {
         <button>Sign Up</button>
       </form>
 
-      <Link to="/">Return to Login</Link>
+      <Link to="/login">Return to Login</Link>
     </div>
   );
 }

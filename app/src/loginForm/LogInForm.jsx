@@ -50,7 +50,7 @@ function LogInForm() {
         <Link to="/forgotpass">Click Here</Link>
       </p>
       <p>
-        Don't have an account? <Link to="/signup">Create one here</Link>
+        Don't have an account? <Link to="/register">Create one here</Link>
       </p>
     </div>
   );

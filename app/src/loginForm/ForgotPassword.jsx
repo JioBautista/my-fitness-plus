@@ -11,7 +11,7 @@ function ForgotPassword() {
             <input />
             <button>Submit</button>
         </form>
-        <Link to="/">Return to Login</Link>
+        <Link to="/login">Return to Login</Link>
     </div>
   )
 }

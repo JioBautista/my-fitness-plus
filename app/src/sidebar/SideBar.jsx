@@ -64,6 +64,10 @@ function SideBar({ grabUrl }) {
         Settings
       </Link>
 
+      <Link to="login" className={styles.link}>
+        Register/LogIn
+      </Link>
+
       <img
         src="/images/icons8-menu-50.png"
         onClick={() => setToggle(!toggle)}
@@ -99,10 +103,7 @@ function SideBar({ grabUrl }) {
                   Back
                 </Link>
 
-                <Link
-                  to="/workouts/arms"
-                  onClick={() => handleClick("arms")}
-                >
+                <Link to="/workouts/arms" onClick={() => handleClick("arms")}>
                   Arms
                 </Link>
 
@@ -127,6 +128,10 @@ function SideBar({ grabUrl }) {
             <Link to="settings">
               <img src="/images/icons8-settings-50.png" />
               Settings
+            </Link>
+
+            <Link to="login">
+              Register/LogIn
             </Link>
           </div>
         </>
