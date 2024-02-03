@@ -59,3 +59,6 @@ Daily Tasks
 02/01/2024
 - Create sign up component & link it [Complete]
 - Create forgot password component & link it [Complete]
+
+02/03/2024
+- Learn and create user authentication and authorization
