@@ -63,3 +63,6 @@ Daily Tasks
 02/03/2024
 - Learn and create user authentication and authorization
 - Insert react-hook-form validation on sign up form component [Complete]
+
+02/04/2024
+- Create an account feature and store data in server

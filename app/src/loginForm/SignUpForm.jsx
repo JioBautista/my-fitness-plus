@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/loginform.module.scss";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 function SignUpForm() {
   const {
@@ -11,7 +12,18 @@ function SignUpForm() {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    axios
+      .post("http://localhost:3000/register", {
+        username: data.username,
+        password: data.password,
+        email: data.email,
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (

@@ -1,5 +1,6 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
 const app = express();
 const axios = require("axios");
 const cors = require("cors");
@@ -31,6 +32,7 @@ const options = {
 
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
 
 app.get("/workouts/:muscle", (req, res) => {
   const param = req.params.muscle;
@@ -81,15 +83,13 @@ app.post("/nutrition/:food", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  const username = req.body.username
+  const username = req.body.username;
 });
 
-function authenticateToken(req, res, next) {
-  const authHeader = req.headers['authorization']
-  const token = authHeader && authHeader.split(' ')[1]
-  if(token == null) return res.status(401)
-
-  jwt.verify(token, )
-}
+app.post("/register", (req, res) => {
+  const data = req.body;
+  console.log("Data received:", data);
+  res.json({ message: "Data received succesfully" });
+});
 
 app.listen(3000);
