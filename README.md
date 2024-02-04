@@ -65,4 +65,4 @@ Daily Tasks
 - Insert react-hook-form validation on sign up form component [Complete]
 
 02/04/2024
-- Create an account feature and store data in server
+- Set up form data from client & send it to server to process [Complete]
