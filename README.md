@@ -81,7 +81,3 @@ Daily Tasks
 02/04/2024
 
 - Set up form data from client & send it to server to process [Complete]
-
-2/05/2024
-
-- Create a quick home page
