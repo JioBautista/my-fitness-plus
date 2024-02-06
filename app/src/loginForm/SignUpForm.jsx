@@ -53,7 +53,7 @@ function SignUpForm() {
         )}
 
         {/* CREATE PASSWORD INPUT */}
-        <label>Enter a password</label>
+        <label>Enter a 4-digit password</label>
         <input
           {...register("password", {
             required: "Password is required",

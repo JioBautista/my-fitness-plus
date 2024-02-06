@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "./layout/Layout";
+import Home from "./pages/Home";
 import LogInForm from "./loginForm/LogInForm";
 import SignUpForm from "./loginForm/SignUpForm";
 import ForgotPassword from "./loginForm/ForgotPassword";
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <>
           <Route path="/" element={<Layout grabUrl={grabUrl} />}>
+            <Route index element={<Home />} />
             <Route path="login" element={<LogInForm />} />
             <Route path="register" element={<SignUpForm />} />
             <Route path="forgotpass" element={<ForgotPassword />} />

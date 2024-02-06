@@ -22,16 +22,18 @@ function Exercises({ params }) {
 
   return (
     <div className={styles.container}>
-      <h1>Exercises based on muscle group</h1>
       {data ? (
         data.map((items) => (
           <React.Fragment key={items.id}>
             <div className={styles.wrapper} key={items.id}>
-              <h2>{items.name}</h2>
-              <h3>Preparation</h3>
-              <p>{items.preparation}</p>
-              <h3>Execution</h3>
-              <p>{items.execution}</p>
+              <div>
+                <h2>{items.name}</h2>
+                <h3>Preparation</h3>
+                <p>{items.preparation}</p>
+                <h3>Execution</h3>
+                <p>{items.execution}</p>
+              </div>
+
               <iframe
                 width="100%"
                 height="315"

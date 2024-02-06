@@ -18,10 +18,6 @@ function LogInForm() {
 
   return (
     <div className={styles.wrapper}>
-      <h1>Start your fitness journey.</h1>
-      <h1>
-        The <span>simple</span> way
-      </h1>
       <h2>Create account or enter as guest</h2>
 
       <form onSubmit={handleSubmit(onSubmit)}>
