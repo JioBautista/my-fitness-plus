@@ -12,11 +12,14 @@ function SideBar({ grabUrl }) {
   return (
     <div className={styles.wrapper}>
       <Link to="/">
-        <h1>FitSimple</h1>
+        <img
+          src="src/images/FitSImple-Logo-FInal.png"
+          style={{ width: "100%", height: "250px" }}
+        />
       </Link>
 
       <div className={styles.dropdown}>
-        <Link to="" className={styles.link}>
+        <Link to="/catalogs" className={styles.link}>
           <img src="/images/icons8-workout-50.png" />
           EXERCISES
         </Link>
@@ -57,12 +60,10 @@ function SideBar({ grabUrl }) {
         NUTRITION
       </Link>
 
-      <hr className={styles.link}></hr>
-
-      <Link to="settings" className={styles.link}>
+      {/* <Link to="settings" className={styles.link}>
         <img src="/images/icons8-settings-50.png" />
         Settings
-      </Link>
+      </Link> */}
 
       <Link to="login" className={styles.link}>
         Register/LogIn
@@ -130,9 +131,7 @@ function SideBar({ grabUrl }) {
               Settings
             </Link>
 
-            <Link to="login">
-              Register/LogIn
-            </Link>
+            <Link to="login">Register/LogIn</Link>
           </div>
         </>
       )}

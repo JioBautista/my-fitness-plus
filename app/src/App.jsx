@@ -1,14 +1,15 @@
 import React from "react";
 import Layout from "./layout/Layout";
 import Home from "./pages/Home";
+import ExerciseCatalog from "./pages/ExerciseCatalog";
+import Exercises from "./pages/Exercises";
+import Programs from "./pages/Programs";
+import Nutrition from "./pages/Nutrition";
+import Settings from "./pages/Settings";
 import LogInForm from "./loginForm/LogInForm";
 import SignUpForm from "./loginForm/SignUpForm";
 import ForgotPassword from "./loginForm/ForgotPassword";
-import Exercises from "./pages/Exercises";
-import Programs from "./pages/Programs";
 import ModalBox from "./modalBox/ModalBox";
-import Nutrition from "./pages/Nutrition";
-import Settings from "./pages/Settings";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <>
           <Route path="/" element={<Layout grabUrl={grabUrl} />}>
             <Route index element={<Home />} />
+            <Route path="catalogs" element={<ExerciseCatalog />} />
             <Route path="login" element={<LogInForm />} />
             <Route path="register" element={<SignUpForm />} />
             <Route path="forgotpass" element={<ForgotPassword />} />

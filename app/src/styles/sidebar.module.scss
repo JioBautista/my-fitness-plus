@@ -1,12 +1,11 @@
 .wrapper {
     position: relative;
     display: flex;
-    padding: 2rem 1rem;
+    padding-inline: 1rem;
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
     background-color: #3F72AF;
-    font-size: 14px;
 
 
     a {
@@ -23,11 +22,6 @@
         width: 25px;
         height: 25px;
         cursor: pointer;
-    }
-
-    hr {
-        align-self: stretch;
-        border: 1px solid white;
     }
 
     .link {
