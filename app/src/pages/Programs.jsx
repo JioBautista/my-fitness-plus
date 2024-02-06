@@ -43,9 +43,9 @@ function Programs({ grabUrl, params }) {
 
       <p>
         Embarking on your fitness journey is a momentous step, and we're here to
-        guide you towards success. Our Workout Programs Page is designed with
-        your goals in mind, offering a variety of programs to suit your
-        preferences and kickstart your transformation.
+        guide you towards success. Our workout programs is designed with your
+        goals in mind, offering a variety of programs to suit your preferences
+        and kickstart your transformation.
       </p>
 
       <h2>Discover Your Perfect Fit:</h2>

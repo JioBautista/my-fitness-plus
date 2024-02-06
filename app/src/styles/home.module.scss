@@ -3,9 +3,11 @@
 
     h1 {
         font-size: 62px;
+        text-align: center;
+        margin-bottom: 1rem;
     }
     h2 {
-        font-size: 32px;
+        font-size: 30px;
         margin-bottom: 2rem;
     }
     span {
@@ -16,5 +18,9 @@
     p {
         margin-bottom: 2rem;
         font-size: 18px;
+    }
+
+    @media(min-width:768px) {
+        padding: 5rem;
     }
 }

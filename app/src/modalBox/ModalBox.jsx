@@ -49,7 +49,6 @@ function ModalBox({ closeModal, serverData }) {
             )}
           </tbody>
         </table>
-        <button>Start Program</button>
         <button onClick={() => closeModal(false)}>Close</button>
       </div>
     </div>

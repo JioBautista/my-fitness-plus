@@ -4,6 +4,7 @@
     h1 {
         margin-bottom: 1rem;
         font-size: 62px;
+        text-align: center;
     }
     h2 {
         margin-bottom: 1rem;
@@ -13,10 +14,15 @@
     }
     span {
         color: #112D4E;
+        font-weight: 700;
     }
     p {
         margin-bottom: 1rem;
         font-size: 18px;
+    }
+
+    @media(min-width:768px) {
+        padding: 5rem;
     }
 }
 

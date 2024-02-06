@@ -85,4 +85,8 @@ Daily Tasks
 02/05/2024
 
 - Fix up exercise page [Complete]
-- Create a quick home page
+- Create a quick home page [Complete]
+
+02/06/2024
+
+- Continue editing pages
