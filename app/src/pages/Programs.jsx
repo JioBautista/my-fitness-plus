@@ -42,10 +42,10 @@ function Programs({ grabUrl, params }) {
       </h2>
 
       <p>
-        Your fitness journey begins now, and we're thrilled to be your guide.
-        Our Workout Programs Page is your gateway to a fitter, stronger you,
-        offering diverse programs crafted to suit your aspirations and elevate
-        your fitness experience.
+        Embarking on your fitness journey is a momentous step, and we're here to
+        guide you towards success. Our Workout Programs Page is designed with
+        your goals in mind, offering a variety of programs to suit your
+        preferences and kickstart your transformation.
       </p>
 
       <h2>Discover Your Perfect Fit:</h2>
